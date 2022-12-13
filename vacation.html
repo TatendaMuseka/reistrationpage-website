@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planning the vacation </title>
+    <script>
+        function nic() {
+            var bb=confirm("Do you want to plan your vacation?");
+            if (bb=true) {
+                document.write("You have successfully planned your vacation!! All the best")
+            }
+        }
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("taj mahal.jpg");
+            background-size: 100%;
+            background-position: -0px 0px;
+        }
+        div.sub{
+            width: 330px;
+            margin: 100px auto 0px auto;
+
+        }
+        h2{
+            text-align: center;
+            padding: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        div.plan{
+            background-color: grey;
+            width: 95%;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 15px greenyellow;
+            color: blue;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+    <div class="sub">
+        <div class="plan">
+            <h2><b><i>LET'S PLAN!!</i></b></h2>
+            <label>From: </label>
+            <br>
+            <input type="text" name="fname"
+            id="name" placeholder="Beginning of vacation">
+            <br><br>
+            <label>To: </label>
+            <br>
+            <input type="text" name="fname"
+            id="name" placeholder="End of vacation">
+            <br><br>
+            <label>Firstname: </label>
+            <br>
+            <input type="text" name="fname"
+            id="name" placeholder="Enter your first name: ">
+            <br><br>
+            <label>Last name: </label>
+            <br>
+            <input type="text" name="fname"
+            id="name" placeholder="Enter your last name: ">
+            <br><br>
+            <label>Number of people on the vacation plan: </label>
+            <br>
+            <input type="text" name="fname"
+            id="name" placeholder="Number of people on vacation">
+            <br><br>
+            <label for="date">Date when trip was planned: </label>
+            <br>
+            <input type="date"  name="date">
+            <br><br>
+            <label>Select an option: </label>
+            <br>
+            <select>
+            <option value="Tour guide"selected>Tour guide</option>
+            <option value="With tour guide">With tour guide</option>
+            <option value="Without tour guide">Without tour guide</option>
+            </select>
+            <input id="input" type="submit" onclick="nic()" value="Submit"name=submit/>
+        </div>
+    </div>
+    </center>
+    
+</body>
+</html>
